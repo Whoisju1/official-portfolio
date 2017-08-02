@@ -1,0 +1,109 @@
+.landing-page {
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url("./../images/osman-rana-293978.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/*background image styling*/
+
+#landing-page-background {
+    z-index: -1;
+    top: 0;
+    background-image: url("./../images/emile-perron-190221.jpg");
+    width: 100%;
+    left: 0;
+    position: absolute;
+    height: auto;
+    width: 100vw
+}
+
+#home-text-wrapper {
+    z-index: 100;
+}
+
+.landing-page-text {
+    text-align: center;
+    padding: .6%;
+    font-size: 1.5rem;
+    margin: auto 5% auto 5%;
+    background-color: rgba(0, 0, 0, .2);
+    color: #ffffff;
+    letter-spacing: 3px;
+    word-spacing: 7px;
+}
+
+.special-text {
+    color: #2980b9;
+    font-weight: bolder;
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 3vh;
+    cursor: pointer;
+    color: lightgray;
+    -webkit-animation-name: scroll-hint;
+    animation-name: scroll-hint;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes scroll-hint {
+    0% {
+        bottom: 4vh;
+        opacity: .2
+    }
+    100% {
+        bottom: 3vh;
+        opacity: .9;
+    }
+}
+
+@keyframes scroll-hint {
+    0% {
+        bottom: 4vh;
+        opacity: .2
+    }
+    100% {
+        bottom: 3vh;
+        opacity: .9;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #landing-page-background {
+        height: 100%;
+        width: 100%;
+        visibility: hidden;
+        background-size: cover;
+    }
+    .landing-page {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: url("./../images/osman-rana-293978.jpg");
+        height: 100vh;
+    }
+}

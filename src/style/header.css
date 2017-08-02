@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+.header-wrapper {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+}
+
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 1;
+    height: 100%;
+    width: 100vw;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#10334a), to(#409ad5));
+    background-image: -webkit-linear-gradient(top, #10334a, #409ad5);
+    background-image: linear-gradient(to bottom, #10334a, #409ad5);
+    opacity: 0;
+    -webkit-animation-name: reveal-header;
+    animation-name: reveal-header;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.balance {
+    margin-right: 8%;
+}
+
+@-webkit-keyframes reveal-header {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: .8
+    }
+}
+
+@keyframes reveal-header {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: .8
+    }
+}
+
+.logo {
+    /*TODO*/
+    position: absolute;
+    left: 7vw;
+    font-size: 2rem;
+    font-size: 2rem;
+    background-color: #2980b9;
+    height: 100%;
+    color: #ffffff;
+    /* font-family: 'Cookie', cursive; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 3%;
+    opacity: .7;
+}
+
+@media screen and (max-width:600px) {
+    header .logo {
+        display: none;
+    }
+}
+
+
+/*=========================nav bar====================*/
+
+nav {
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 0 0.5rem;
+    font-weight: 100;
+}
+
+nav ul li:nth-of-type(2) {
+    border-left: 1px solid rgb(82.7%, 82.7%, 82.7%);
+    border-right: 1px solid rgb(82.7%, 82.7%, 82.7%);
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #f4d03f;
+    cursor: pointer;
+    font-size: 1.5em;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f4d03f;
+}
+
+.active {
+    text-decoration: underline;
+    font-weight: bolder;
+    /* color: #faebaf; */
+}
+
+
+/*=============================social media logos=============================*/

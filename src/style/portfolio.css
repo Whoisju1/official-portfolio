@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+.portfolio {
+    text-align: center;
+    background-image: url("./../images/andrew-collins-178963.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    padding: 5%;
+}
+
+.portfolio-content-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.bk-img {
+    z-index: -2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/*==========work done area===============*/
+
+.work-done-container {
+    height: 55%;
+}
+
+.work-wrapper {
+    height: 20vh;
+    width: 17vw;
+    font-size: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background: #ffffff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.work-list {
+    padding: 5% 0 5% 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    overflow-x: visible;
+    height: 250px;
+}
+
+.project-name {
+    font-size: 200%;
+    text-align: center;
+    font-family: "roberto";
+}
+
+.project-link {
+    font-size: 1.03rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    margin: 5% auto;
+}
+
+.work-wrapper a {
+    color: #ffffff;
+    -webkit-transition: all .7s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.work-wrapper {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    background: transparent;
+    border-radius: 15px;
+    color: #d9ebf7;
+    padding-top: 2%;
+}
+
+@media screen and (max-width:413) {
+    .work-wrapper {
+        height: 30vh
+    }
+}
+
+@media screen and (max-width:413) {
+    .work-wrapper {
+        height: 30vh
+    }
+}
+
+.work-heading {
+    margin-top: 11%;
+    color: lightgray;
+    font-size: 214%;
+    font-weight: bold;
+}
+
+.work-wrapper:hover {
+    color: #ffffff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0%, 0%, 0%, 0)), to(rgba(0%, 0%, 0%, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(0%, 0%, 0%, .8), rgba(0%, 0%, 0%, 0));
+    background-image: linear-gradient(to bottom, rgba(0%, 0%, 0%, .8), rgba(0%, 0%, 0%, 0));
+}
+
+.work-wrapper:hover a {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+.work-bkg {
+    cursor: default;
+    position: absolute;
+    letter-spacing: -1px;
+    top: 295px;
+    padding: 6% 2.2%;
+    font-size: 90px;
+    color: #3498db;
+    font-family: 'Black Ops One', cursive;
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+
+@-webkit-keyframes disappear {
+    0% {
+        color: #3498db;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        color: #0d3048;
+        pointer-events: none;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        color: #3498db;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        color: #0d3048;
+        pointer-events: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .portfolio .project-link {
+        opacity: 1;
+        color: #ffffff;
+        font-size: small;
+    }
+    .work-bkg {
+        display: none;
+    }
+    .project-name {
+        text-decoration: underline;
+    }
+    .work-heading {
+        margin: 5%;
+    }
+    .portfolio {
+        display: block;
+    }
+    .work-wrapper {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .portfolio {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-flow: column;
+        flex-flow: column;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .portfolio {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-flow: column;
+        flex-flow: column;
+    }
+}

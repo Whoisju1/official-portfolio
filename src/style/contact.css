@@ -1,0 +1,57 @@
+.contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    height: calc(100vh - 20vh);
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./../images/pineapple-supply-co-142104.jpg);
+}
+
+.footer-wrapper {
+    border: 1px solid black;
+}
+
+.contact-btn {
+    /*align-self: center;*/
+    bottom: 0;
+    left: 100;
+    -webkit-filter: grayscale(0%) drop-shadow(5px 5px 5px #222);
+    filter: grayscale(0%) drop-shadow(5px 5px 5px #222);
+    margin: auto;
+    border-radius: 13rem;
+    border: .04rem solid #2980b9;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    padding: 1rem;
+    background-color: #3498db;
+    color: #f4d03f;
+    font-size: 26px;
+    font-weight: lighter;
+}
+
+.contact-btn:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    /* border: 1rem double #a2cdea; */
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.contact-btn:focus {
+    background-color: #2980b9;
+}
+
+.mail {
+    margin-left: 1%;
+}

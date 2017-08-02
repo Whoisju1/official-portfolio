@@ -1,0 +1,109 @@
+.contact-form {
+    z-index: 9999;
+    background-color: #ffffff;
+    padding: 3% 3%;
+    border-radius: 3px;
+    -webkit-animation-name: appear;
+    animation-name: appear;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .9;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .9;
+    }
+}
+
+.contact-form label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-flow: column;
+    flex-flow: column;
+}
+
+input {
+    width: 100%;
+    margin: 4% auto;
+}
+
+.submitBtn {
+    border-radius: 30rem;
+    padding: 2% 5%;
+    width: 60%;
+    margin: 3% auto;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.submitBtn:hover {
+    background-color: #000000;
+    color: #ffffff;
+    width: 70%
+}
+
+input:required {
+    border: .4px solid red;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9997;
+    background: rgba(0, 0, 0, 0.75);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.close-btn {
+    z-index: 10000;
+    color: white;
+    position: fixed;
+    top: 4vh;
+    right: 4vw;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+.msg-input {
+    padding: 5px;
+    font-family: sans-serif;
+    border-radius: 3px;
+}
+
+.send-btn {
+    /* background-color: #f4d03f; */
+}

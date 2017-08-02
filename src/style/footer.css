@@ -1,0 +1,51 @@
+footer {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    width: 100%;
+    bottom: 0;
+    height: 20vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 80%;
+    border: 1px solid black;
+    background: #000000;
+    color: #ffffff;
+}
+
+.online-presence {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 251px;
+}
+
+.social-links {
+    width: 50%;
+    text-align: center;
+}
+
+.social-logo {
+    margin: 0;
+    height: auto;
+    width: 40%;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    color: #2980b9;
+    margin: 0 2%;
+}
+
+.social-logo:hover {
+    color: #fff;
+    opacity: 1;
+}

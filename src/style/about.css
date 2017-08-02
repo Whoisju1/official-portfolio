@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Pavanam');
+.about {
+    height: 100vh;
+}
+
+
+/*--------------------------------------PROFILE SECTION---------------------------------*/
+
+.profile {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background: #2980b9;
+    height: 50vh;
+}
+
+.developer-img {
+    align-self: center;
+    height: auto;
+    width: 15vmax;
+    border-radius: .3rem;
+    border: 0.01rem solid #78b7e1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+    margin-bottom: 2%;
+    margin-left: 5%;
+}
+
+.bio-area {
+    height: 50vh;
+    background-color: #34495e;
+    color: lightgray;
+    font-weight: 100;
+}
+
+.bio-heading {
+    text-align: center;
+    width: 100%;
+}
+
+.bio {
+    display: flex;
+    -ms-flex-preferred-size: 65%;
+    flex-basis: 65%;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 500px) {
+    .bio {
+        flex-basis: unset;
+    }
+    .profile {
+        height: 50%;
+        padding: 4%;
+    }
+}
+
+
+/* @media screen and (max-width: 430px) {} */
+
+.skills-container {
+    background-image: none;
+    color: red;
+}
+
+.skills-heading {
+    font-size: 80%;
+    font-family: 'Pavanam', sans-serif;
+}
+
+
+/*--------------------SKILLS STYLING SECTION-----------------------------*/
+
+.skills-container {
+    /*where the heading and the container with the of skills appear*/
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: #252525;
+    width: 100%;
+    display: flex;
+    width: 100%;
+    font-size: 1em;
+    color: #bdc3c7;
+    font-family: monospace;
+    font-size: 1.6rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.skill-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+.skill-list {
+    column-count: auto;
+    column-fill: auto;
+    columns: 3;
+    padding-bottom: 3%;
+    column-rule-style: groove;
+}
+
+.skill-img-container {
+    display: flex;
+    justify-content: space-around;
+    height: 70%;
+    align-items: center;
+}
+
+@media screen and (max-height: 700px) {
+    .skill-img-container {
+        display: none;
+    }
+}
+
+.skill-img {
+    height: auto;
+    width: 74%;
+    max-width: 4em;
+    margin: 5%;
+    -webkit-filter: grayscale(20%);
+    filter: grayscale(20%);
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    transition: all .8s;
+}
+
+.skills-heading {
+    width: 100%;
+    text-shadow: 5px 5px 5px #222;
+    font-size: 97%;
+    text-align: center;
+    margin: 0 auto 3% auto;
+}
+
+.skill-name {
+    text-shadow: 5px 5px 5px #222;
+    text-align: center;
+    padding-bottom: .5em;
+    margin-bottom: 3%;
+    font-size: 73%;
+}
