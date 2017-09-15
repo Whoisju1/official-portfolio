@@ -8,9 +8,9 @@ const workList = [
     herokuLink: "https://giftome.herokuapp.com/"
   },
   {
-    appName: "Crystal Collector",
-    sourceCode: "https://github.com/Whoisju1/week-4-game.git",
-    herokuLink: "https://sleepy-atoll-65818.herokuapp.com/"
+    appName: "JobNotes (Incomplete)",
+    sourceCode: "https://github.com/Whoisju1/JobNotes.git",
+    herokuLink: "http://jobnotes.herokuapp.com/"
   },
   {
     appName: "News Grubber",
