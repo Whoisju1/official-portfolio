@@ -50,6 +50,13 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    background: transparent;
+    border-radius: 15px;
+    color: #d9ebf7;
+    padding-top: 70px;
+    /* padding-top: 5%; */
 }
 
 .work-list {
@@ -92,24 +99,19 @@
     transform: scale(1.1)
 }
 
-.work-wrapper {
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-    background: transparent;
-    border-radius: 15px;
-    color: #d9ebf7;
-    padding-top: 2%;
-}
+.work-wrapper {}
 
 @media screen and (max-width:413) {
     .work-wrapper {
-        height: 30vh
+        height: 30vh;
+        padding-top: 0
     }
 }
 
 @media screen and (max-width:413) {
     .work-wrapper {
-        height: 30vh
+        height: 30vh;
+        padding-top: 0
     }
 }
 
@@ -120,30 +122,44 @@
     font-weight: bold;
 }
 
-.work-wrapper:hover {
-    color: #ffffff;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0%, 0%, 0%, 0)), to(rgba(0%, 0%, 0%, 0)));
-    background-image: -webkit-linear-gradient(top, rgba(0%, 0%, 0%, .8), rgba(0%, 0%, 0%, 0));
-    background-image: linear-gradient(to bottom, rgba(0%, 0%, 0%, .8), rgba(0%, 0%, 0%, 0));
-}
-
-.work-wrapper:hover a {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1)
+@media screen and (min-width:800px) {
+    .work-wrapper:hover {
+        color: #ffffff;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0%, 0%, 0%, 0)), to(rgba(0%, 0%, 0%, 0)));
+        background-image: -webkit-linear-gradient(top, rgba(0%, 0%, 0%, .8), rgba(0%, 0%, 0%, 0));
+        background-image: linear-gradient(to bottom, rgba(0%, 0%, 0%, .8), rgba(0%, 0%, 0%, 0));
+    }
+    .work-wrapper:hover a {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
 }
 
 .work-bkg {
     cursor: default;
-    position: absolute;
+    position: relative;
     letter-spacing: -1px;
-    top: 295px;
     padding: 6% 2.2%;
     font-size: 90px;
     color: #3498db;
     font-family: 'Black Ops One', cursive;
     -webkit-transition: all .7s ease-in-out;
     transition: all .7s ease-in-out;
+}
+
+.github-link,
+.live-site {
+    position: relative;
+    ;
+}
+
+.github-link {
+    top: -76px
+}
+
+.live-site {
+    top: -50px
 }
 
 @-webkit-keyframes disappear {
@@ -181,6 +197,9 @@
     }
     .project-name {
         text-decoration: underline;
+        /* position: relative; */
+        top: -37px;
+        margin: 0 2%;
     }
     .work-heading {
         margin: 5%;
@@ -189,7 +208,26 @@
         display: block;
     }
     .work-wrapper {
-        height: 30vh;
+        height: 27vh;
+        padding-top: 0;
+    }
+    .project-link,
+    .github-link,
+    .live-site {
+        position: relative;
+        top: 5px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .project-name {
+        font-size: 174%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .project-name {
+        font-size: 133%;
     }
 }
 
@@ -207,6 +245,11 @@
         -ms-flex-flow: column;
         flex-flow: column;
     }
+    .project-link,
+    .github-link,
+    .live-site {
+        position: block;
+    }
 }
 
 @media screen and (max-width:540px) {
@@ -222,5 +265,10 @@
         align-items: center;
         -ms-flex-flow: column;
         flex-flow: column;
+    }
+    .project-link,
+    .github-link,
+    .live-site {
+        position: block;
     }
 }
