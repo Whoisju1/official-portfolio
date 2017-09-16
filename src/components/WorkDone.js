@@ -5,17 +5,17 @@ const workList = [
   {
     appName: "GifItToMe",
     sourceCode: "https://github.com/Whoisju1/GifItToMe.git",
-    herokuLink: "https://giftome.herokuapp.com/"
+    herokuLink: "https://giftome.herokuapp.com"
   },
   {
     appName: "JobNotes (Incomplete)",
     sourceCode: "https://github.com/Whoisju1/JobNotes.git",
-    herokuLink: "http://jobnotes.herokuapp.com/"
+    herokuLink: "http://jobnotes.herokuapp.com"
   },
   {
     appName: "News Grubber",
     sourceCode: "https://github.com/Whoisju1/News-Grubber.git",
-    herokuLink: "https://news-grubber.herokuapp.com/"
+    herokuLink: "https://news-grubber.herokuapp.com"
   }
 ];
 
