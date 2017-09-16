@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Poiret+One|Yesteryear');
 @import url('https://fonts.googleapis.com/css?family=Cookie');
 .header-wrapper {
     z-index: 100;
@@ -18,9 +19,7 @@ header {
     z-index: 1;
     height: 100%;
     width: 100vw;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#10334a), to(#409ad5));
-    background-image: -webkit-linear-gradient(top, #10334a, #409ad5);
-    background-image: linear-gradient(to bottom, #10334a, #409ad5);
+    background-color: #409ad5;
     opacity: 0;
     -webkit-animation-name: reveal-header;
     animation-name: reveal-header;
@@ -65,7 +64,7 @@ header {
     background-color: #2980b9;
     height: 100%;
     color: #ffffff;
-    /* font-family: 'Cookie', cursive; */
+    font-family: 'Monoton', cursive;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
