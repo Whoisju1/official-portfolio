@@ -17,9 +17,19 @@
 }
 
 .developer-img {
+    width: 20%;
+    min-width: 15vw;
+}
+
+@supports (width: 15vmax) {
+    .developer-img {
+        width: 15vmax;
+    }
+}
+
+.developer-img {
     align-self: center;
     height: auto;
-    width: 15vmax;
     border-radius: .3rem;
     border: 0.01rem solid #78b7e1;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
@@ -101,11 +111,18 @@
 
 .skill-list {
     column-count: auto;
-    column-fill: auto;
     columns: 3;
     padding-bottom: 3%;
     column-rule-style: groove;
+    columns: 3;
 }
+
+
+/* @supports (column-fill: auto) {
+    .skill-list {
+        column-fill: auto;
+    }
+} */
 
 .skill-img-container {
     display: flex;
